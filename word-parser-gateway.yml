@@ -13,7 +13,7 @@ zuul:
   ignoredServices: '*'
   routes:
     word-parser:
-      path: /metasite-parser-api/**
+      path: /parser-api/**
       serviceId: word-parser-service
       stripPrefix: false
 
