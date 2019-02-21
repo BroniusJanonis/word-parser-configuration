@@ -5,7 +5,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8010/eureka/
+      defaultZone: http://10.0.75.1:8010/eureka/
 
 # zuul:
 #   prefix: /services
