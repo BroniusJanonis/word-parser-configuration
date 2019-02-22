@@ -8,14 +8,14 @@ eureka:
   client:
     register-with-eureka: true
     serviceUrl:
-      defaultZone: http://localhost:8010/eureka/
+      defaultZone: http://157.230.27.96:8010/eureka/
       
 zuul:
   ignoredServices: '*'
   prefix: /parser-api
   routes:
     parser-api-proxy:
-      url: http://localhost:8020
+      url: http://157.230.27.96:8020
       path: /**
       serviceId: word-parser-gateway
   eureka:
