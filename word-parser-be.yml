@@ -2,7 +2,7 @@
 spring:
   profiles: word-parser-be
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://157.230.27.96:5432/postgres
     username: postgres
     password: word-parser-psw
   jpa:
@@ -27,7 +27,7 @@ logging:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8010/eureka/
+      defaultZone: http://157.230.27.96:8010/eureka/
       
 liquibase:
   change-log: classpath:/db/changelog/master-common.xml
