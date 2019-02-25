@@ -12,9 +12,10 @@ eureka:
       
 zuul:
   ignoredServices: '*'
-  prefix: /parser-api
+#   prefix: /parser-api
   routes:
-    parser-api-proxy:
+    word-parser-gateway:
+#     parser-api-proxy:
       url: http://157.230.27.96:8020
       path: /**
       serviceId: word-parser-gateway
