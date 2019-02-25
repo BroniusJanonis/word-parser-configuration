@@ -26,6 +26,9 @@
 ---
 spring:
   profiles: word-parser-fe
+  http:
+    multipart:
+    max-file-size: 2MB
 
 eureka:
   instance:
