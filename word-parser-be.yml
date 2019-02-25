@@ -51,9 +51,10 @@ spring:
   jackson:
       serialization:
         write-dates-as-timestamps: false
-  http:
+  servlet:
     multipart:
       max-file-size: 2MB
+      max-request-size: 2MB
       
 logging:
   level:
