@@ -35,3 +35,7 @@ zuul:
       path: /parser-api/**
       serviceId: word-parser-be
       stripPrefix: false
+
+multipart:
+  maxFileSize: 2MB
+  max-request-size: 2Mb
