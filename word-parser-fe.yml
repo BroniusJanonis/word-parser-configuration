@@ -40,10 +40,14 @@ zuul:
   prefix: /api
   routes:
     word-parser-gateway:
-      url: http://localhost:8020
       path: /**
       serviceId: word-parser-gateway
   eureka:
     gateway:
       semaphore:
         maxSemaphores: 300
+        
+word-parser-gateway:
+   ribbon:
+     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
+     listOfServers: http://localhost:8020
