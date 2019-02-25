@@ -37,7 +37,7 @@
 spring:
   profiles: word-parser-be
   datasource:
-    url: jdbc:postgresql://157.230.27.96:5432/postgres
+    url: jdbc:postgresql://localhost:5432/postgres
     username: word-parser-user
     password: word-parser-psw
   jpa:
