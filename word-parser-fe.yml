@@ -26,9 +26,6 @@
 ---
 spring:
   profiles: word-parser-fe
-  http:
-    multipart:
-    max-file-size: 2MB
 
 eureka:
   instance:
@@ -50,3 +47,8 @@ zuul:
     gateway:
       semaphore:
         maxSemaphores: 300
+        
+multipart:
+  maxFileSize: 2MB
+  maxRequestSize: 2MB
+
