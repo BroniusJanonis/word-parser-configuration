@@ -37,7 +37,7 @@ eureka:
       
 zuul:
   ignoredServices: '*'
-  prefix: /parser-api
+  prefix: /api
   routes:
     word-parser-gateway:
       url: http://localhost:8020
