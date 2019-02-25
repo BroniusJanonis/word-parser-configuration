@@ -35,8 +35,3 @@ zuul:
       path: /parser-api/**
       serviceId: word-parser-be
       stripPrefix: false
-      
-word-parser-be:
-   ribbon:
-     NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
-     listOfServers: http://localhost:7001
