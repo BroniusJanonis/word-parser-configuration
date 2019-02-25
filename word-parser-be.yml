@@ -38,8 +38,8 @@ spring:
   profiles: word-parser-be
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
-    username: word-parser-user
-    password: word-parser-psw
+    username: postgres
+    password: 
   jpa:
     show_sql: true
     hibernate:
