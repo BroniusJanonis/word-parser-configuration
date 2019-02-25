@@ -12,7 +12,7 @@ eureka:
 zuul:
   ignoredServices: '*'
   routes:
-    word-parser:
+    word-parser-be:
       path: /parser-api/**
       serviceId: word-parser-be
       stripPrefix: false
