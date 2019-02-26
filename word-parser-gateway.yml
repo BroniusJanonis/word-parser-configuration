@@ -14,6 +14,9 @@ eureka:
 # zuul:
 #   prefix: /services
 zuul:
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 60000
   ignoredServices: '*'
   routes:
     word-parser-be:
