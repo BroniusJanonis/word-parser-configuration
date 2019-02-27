@@ -32,38 +32,3 @@ eureka:
 liquibase:
   change-log: classpath:/db/changelog/master-common.xml
   contexts: test
-
-# ---
-# spring:
-#   profiles: word-parser-be
-#   datasource:
-#     url: jdbc:postgresql://localhost:5432/postgres
-#     username: postgres
-#     password: 
-#   jpa:
-#     show_sql: true
-#     hibernate:
-#       ddl-auto: create-drop
-#     properties:
-#       javax.persistence.schema-generation.create-source: metadata
-#       javax.persistence.schema-generation.scripts.action: create
-#       javax.persistence.schema-generation.scripts.create-target: create.sql
-#   jackson:
-#       serialization:
-#         write-dates-as-timestamps: false
-#   http:
-#     multipart:
-#       max-file-size: 2MB
-      
-# logging:
-#   level:
-#     org.springframework.jdbc: TRACE
-
-# eureka:
-#   client:
-#     serviceUrl:
-#       defaultZone: http://localhost:8010/eureka/
-      
-# liquibase:
-#   change-log: classpath:/db/changelog/master-common.xml
-#   contexts: test
