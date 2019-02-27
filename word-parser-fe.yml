@@ -26,33 +26,3 @@ zuul:
     gateway:
       semaphore:
         maxSemaphores: 300
-
-
-# ---
-# spring:
-#   profiles: word-parser-fe
-#   servlet:
-#     multipart:
-#       max-file-size: 2MB
-#       max-request-size: 2MB
-
-# eureka:
-#   instance:
-#     preferIpAddress: true
-#   client:
-#     register-with-eureka: true
-#     serviceUrl:
-#       defaultZone: http://localhost:8010/eureka/
-      
-# zuul:
-#   ignoredServices: '*'
-#   prefix: /api
-#   routes:
-#     word-parser-gateway:
-#       url: http://localhost:8020
-#       path: /**
-#       serviceId: word-parser-gateway
-#   eureka:
-#     gateway:
-#       semaphore:
-#         maxSemaphores: 300
