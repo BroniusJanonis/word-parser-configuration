@@ -40,6 +40,7 @@ zuul:
   ignoredServices: '*'
   routes:
     word-parser-be:
+      url: http://localhost:7001
       path: /parser-api/**
       serviceId: word-parser-be
       stripPrefix: false
