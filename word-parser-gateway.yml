@@ -19,27 +19,3 @@ zuul:
        path: /parser-api/**
        serviceId: word-parser-be
        stripPrefix: false
-
-# ---
-# spring:
-#   profiles: word-parser-gateway
-#   servlet:
-#     multipart:
-#       max-file-size: 2MB
-#       max-request-size: 2MB
-
-# eureka:
-#   client:
-#     serviceUrl:
-#       defaultZone: http://localhost:8010/eureka/
-
-# # zuul:
-# #   prefix: /services
-# zuul:
-#   ignoredServices: '*'
-#   routes:
-#     word-parser-be:
-#       url: http://localhost:7001
-#       path: /parser-api/**
-#       serviceId: word-parser-be
-#       stripPrefix: false
