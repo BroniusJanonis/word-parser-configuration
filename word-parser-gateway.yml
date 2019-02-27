@@ -1,3 +1,26 @@
+# ---
+# spring:
+#   profiles: word-parser-gateway
+#   servlet:
+#     multipart:
+#       max-file-size: 2MB
+#       max-request-size: 2MB
+
+# eureka:
+#   client:
+#     serviceUrl:
+#       defaultZone: http://157.230.27.96:8010/eureka/
+
+# # zuul:
+# #   prefix: /services
+# zuul:
+#   ignoredServices: '*'
+#   routes:
+#     word-parser-be:
+#       path: /parser-api/**
+#       serviceId: word-parser-be
+#       stripPrefix: false
+
 ---
 spring:
   profiles: word-parser-gateway
@@ -9,7 +32,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://157.230.27.96:8010/eureka/
+      defaultZone: http://gatewat:8010/eureka/
 
 # zuul:
 #   prefix: /services
